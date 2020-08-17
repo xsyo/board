@@ -1,0 +1,9 @@
+{% extends "layout/basic.html" %}
+
+{% block title %}Ошибка при восстановлении{% endblock %}
+
+{% block content %}
+    <h2>Восстановление</h2>
+    <p>Восстановление пароля прошла неудачно</p>
+    <p><a href="{% url 'main:password_recovery' %}">Сбросить пароль повторно</a></p>
+{% endblock %}
